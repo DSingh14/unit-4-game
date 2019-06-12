@@ -6,42 +6,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    //add css <style type="text/css">
-        .crystal-image {
-            width: 300px;
-            height: 300px;
-        }
-    </style>
+    <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Added a link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- //added link to rest -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <!-- //link to css -->
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+
 </head>
 
 <body>
-    //add crystal image
-    <div id="crystals">
-        <img class="crystal-image"
-            src="http://cdn.playbuzz.com/cdn/35910209-2844-45c0-b099-f4d82878d54f/00261fda-4062-4096-81fd-8cf96b9034e8.jpg"
-            alt="crystals">
-        <img class="crystal-image"
-            src="http://cdn.playbuzz.com/cdn/35910209-2844-45c0-b099-f4d82878d54f/00261fda-4062-4096-81fd-8cf96b9034e8.jpg"
-            alt="crystals">
-        <img class="crystal-image"
-            src="http://cdn.playbuzz.com/cdn/35910209-2844-45c0-b099-f4d82878d54f/00261fda-4062-4096-81fd-8cf96b9034e8.jpg"
-            alt="crystals">
-        <img class="crystal-image"
-            src="http://cdn.playbuzz.com/cdn/35910209-2844-45c0-b099-f4d82878d54f/00261fda-4062-4096-81fd-8cf96b9034e8.jpg"
-            alt="crystals">
+    <div class="jumbotron"></div>
+    <!-- //titile -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card-body text-center">
+                    <h1 id="Crystal-Collector">Crystal Collector!</h1>
+                </div>
+            </div>
+        </div>
     </div>
-    // add jquery library
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    // add js
-    <script type="text/javascript">
+    <!-- //text -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card-body text-center">
+                    <p id="rule">You will be given a random number at teh start of the game.</p>
 
-        var counter = 0;
-        // create on click event for images that response to button of crystal image.
-        $(".crystal-image").on("click", function () {
-            counter += 1;
-            console.log(" image clicked " + counter + "times");
+                    <p>There are four crystal below.By clicking on the crystal you will add a specific amount of points
+                        to your total score.</p>
 
-        });
+                    <p>You win the game by matching your total score to random number, you lose the game if your total
+                        score gone above the random number.</p>
+
+                    <p>The value of each crystal is hidden from you until you click on it.</p>
+
+                    <p>Each time when the game starts, the game will change the value of each crystal.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- //target count & result, win and losses -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card-body text-center">
+                    <h1 id="target-count">Target Count</h1>
+                    <button id="random-button" class="btn btn-primary btn-lg fa fa-question"></button>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="row">
+                    <div class="col-md-4" id="youLost"> You lost!!</div>
+                    <div class="col-md-4" id="wins">
+                        <h3>Wins</h3>
+                    </div>
+                    <div class="col-md-4" id="losses"> Losses</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- //image -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card-deck">
+                    <div class="card">
+                        <img src="./assets/images/yellow-diamond.jpg" class="card-img-top" id="yellowD" alt="...">
+                    </div>
+                    <div class="card">
+                        <img src="./assets/images/blue-diamond.jpg" class="card-img-top" id="blueD" alt="...">
+                    </div>
+                    <div class="card">
+                        <img src="./assets/images/diamond.jpg" class="card-img-top" id="diamond" alt="...">
+                    </div>
+                    <div class="card">
+                        <img src="./assets/images/red-crystal.jpg" class="card-img-top" id="redD" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- // current score -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4" id="scoreText">
+                <p> Your total score</p>
+            </div>
+        </div>
+    </div>
+    <!-- // current count -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4" id="totalScore">
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- add js -->
+    <script type="text/javascript" src="assets/javascritp/game.js">
+
+
+
+
     </script>
 </body>
 
