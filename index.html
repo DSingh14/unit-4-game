@@ -26,7 +26,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4">
-                <div class="card-body text-center">
+                <div class="card-body text-center border border-info rounded">
                     <h1 id="Crystal-Collector">Crystal Collector!</h1>
                 </div>
             </div>
@@ -36,7 +36,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8">
-                <div class="card-body text-center">
+                <div class="card-body text-center border border-warning rounded">
                     <p id="rule">You will be given a random number at teh start of the game.</p>
 
                     <p>There are four crystal below.By clicking on the crystal you will add a specific amount of points
@@ -57,19 +57,52 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4">
-                <div class="card-body text-center">
-                    <h1 id="target-count">Target Count</h1>
-                    <button id="random-button" class="btn btn-primary btn-lg fa fa-question"></button>
+                <div class="card text-center">
+                    <div class="card-header">
+                        Target Count
+                    </div>
+                    <div class="card-body">
+                        <h1 id="target-count"></h1>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-2">
-                <div class="row">
-                    <div class="col-md-4" id="youLost"> You lost!!</div>
-                    <div class="col-md-4" id="wins">
-                        <h3>Wins</h3>
+            <div class="col-md-4">
+                <!-- s<div class="row"> -->
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            You lost!
+                        </div>
+                        <div class="card-body">
+                            <h1 id="win"></h1>
+                        </div>
                     </div>
-                    <div class="col-md-4" id="losses"> Losses</div>
                 </div>
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            Wins
+                        </div>
+                        <div class="card-body">
+                            <h1 id="wins"></h1>
+                        </div>
+                    </div>
+                    <!-- <h3>Wins </h3>
+                    <h3 id="wins"></h3> -->
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            Losses
+                        </div>
+                        <div class="card-body">
+                            <h1 id="losses"></h1>
+                        </div>
+                    </div>
+                    <!-- <h3>Losses</h3>
+                    <h3 id="losses"></h3> -->
+                </div>
+                <!-- </div> -->
 
             </div>
         </div>
@@ -78,7 +111,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <div class="card-deck">
+                <div class="card-deck border border-info rounded">
                     <div class="card">
                         <img src="./assets/images/yellow-diamond.jpg" class="card-img-top" id="yellowD" alt="...">
                     </div>
@@ -99,7 +132,7 @@
     <!-- // current score -->
     <div class="container">
         <div class="row">
-            <div class="col-md-4" id="scoreText">
+            <div class="col-md-4 border border-warning rounded" id="scoreText">
                 <p> Your total score</p>
             </div>
         </div>
@@ -107,7 +140,9 @@
     <!-- // current count -->
     <div class="container">
         <div class="row">
-            <div class="col-md-4" id="totalScore">
+            <div class="col-md-4 border border-info rounded">
+                <h1></h1>
+                <h1 id="totalScore"></h1>
                 <p></p>
             </div>
         </div>
