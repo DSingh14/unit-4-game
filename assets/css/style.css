@@ -37,7 +37,10 @@ h2{
 	background-color: #ecbf95cc;
 	border:solid 3px #73ddd4cc;
 }
-
+.container-score{
+	margin:0 auto;
+	text-align: center;
+}
 .card-header{
 	background-color: #ecbf95cc;
 	border:solid 3px #73ddd4cc;
