@@ -21,135 +21,118 @@
 </head>
 
 <body>
-    <div class="jumbotron"></div>
-    <!-- //titile -->
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card-body text-center border border-info rounded">
-                    <h1 id="Crystal-Collector">Crystal Collector!</h1>
+    <div class="container-fluid" id="mainBody">
+        <!-- //titile -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text-center ">
+                        <h1 id="Crystal-Collector"><strong>Crystal Collector..</strong>
+                        </h1>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- //text -->
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8">
-                <div class="card-body text-center border border-warning rounded">
-                    <p id="rule">You will be given a random number at teh start of the game.</p>
+        <!-- //text -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="card-body text-center ">
+                        <h2 class="rule-center">How to Play...</h2>
+                        <p class="text" id="rule text-center">
+                            You will be given a random number at teh start of the game.<br>
 
-                    <p>There are four crystal below.By clicking on the crystal you will add a specific amount of points
-                        to your total score.</p>
+                            There are four crystal below.By clicking on the crystal you will add a specific amount of
+                            points to your total score.<br>
 
-                    <p>You win the game by matching your total score to random number, you lose the game if your total
-                        score gone above the random number.</p>
+                            You win the game by matching your total score to random number, you lose the game if your
+                            total score gone above the random number.<br>
 
-                    <p>The value of each crystal is hidden from you until you click on it.</p>
+                            The value of each crystal is hidden from you until you click on it.<br>
 
-                    <p>Each time when the game starts, the game will change the value of each crystal.</p>
+                            Each time when the game starts, the game will change the value of each crystal.</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
     </div>
     <!-- //target count & result, win and losses -->
-    <div class="container">
+    <div class="container-score">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-2 flex-item">
                 <div class="card text-center">
                     <div class="card-header">
-                        Target Count
+                        <h2>Target Score</h2>
                     </div>
-                    <div class="card-body">
+                    <div class="value-body">
                         <h1 id="target-count"></h1>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <!-- s<div class="row"> -->
-                <div class="col-md-4">
-                    <div class="card text-center">
-                        <div class="card-header">
-                            You lost!
-                        </div>
-                        <div class="card-body">
-                            <h1 id="win"></h1>
-                        </div>
+            <div class="col-md-2 flex-item">
+                <div class="card text-center">
+                    <div class="card-header">
+                        <h2>Current Score</h2>
+                    </div>
+                    <div class="value-body">
+                        <h1 id="totalScore"></h1>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card text-center">
-                        <div class="card-header">
-                            Wins
-                        </div>
-                        <div class="card-body">
-                            <h1 id="wins"></h1>
-                        </div>
+            </div>
+            <div class="col-md-2 flex-item">
+                <div class="card text-center">
+                    <div class="card-header">
+                        <h2>Wins</h2>
                     </div>
-                    <!-- <h3>Wins </h3>
-                    <h3 id="wins"></h3> -->
-                </div>
-                <div class="col-md-4">
-                    <div class="card text-center">
-                        <div class="card-header">
-                            Losses
-                        </div>
-                        <div class="card-body">
-                            <h1 id="losses"></h1>
-                        </div>
+                    <div class="value-body">
+                        <h1 id="wins"></h1>
                     </div>
-                    <!-- <h3>Losses</h3>
-                    <h3 id="losses"></h3> -->
                 </div>
-                <!-- </div> -->
-
+            </div>
+            <div class="col-md-2 flex-item">
+                <div class="card text-center">
+                    <div class="card-header">
+                        <h2>Losses</h2>
+                    </div>
+                    <div class="value-body">
+                        <h1 id="losses"></h1>
+                    </div>
+                </div>
             </div>
         </div>
+        <div class="card-body">
+            <h1 id="losses"></h1>
+        </div>
+    </div>
+    </div>
     </div>
     <!-- //image -->
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
-                <div class="card-deck border border-info rounded">
-                    <div class="card">
-                        <img src="./assets/images/yellow-diamond.jpg" class="card-img-top" id="yellowD" alt="...">
-                    </div>
-                    <div class="card">
-                        <img src="./assets/images/blue-diamond.jpg" class="card-img-top" id="blueD" alt="...">
-                    </div>
-                    <div class="card">
-                        <img src="./assets/images/diamond.jpg" class="card-img-top" id="diamond" alt="...">
-                    </div>
-                    <div class="card">
-                        <img src="./assets/images/red-crystal.jpg" class="card-img-top" id="redD" alt="...">
-                    </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="./assets/images/blue-diamond.jpg" class="card-img-top" id="blueD" alt="...">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="./assets/images/diamond.jpg" class="card-img-top" id="diamond" alt="...">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="./assets/images/red-crystal.jpg" class="card-img-top" id="redD" alt="...">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="./assets/images/yellow-diamond.jpg" class="card-img-top" id="yellowD" alt="...">
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- // current score -->
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 border border-warning rounded" id="scoreText">
-                <p> Your total score</p>
-            </div>
-        </div>
     </div>
-    <!-- // current count -->
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 border border-info rounded">
-                <h1></h1>
-                <h1 id="totalScore"></h1>
-                <p></p>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- add js -->
+    <!-- //add JS -->
     <script type="text/javascript" src="assets/javascritp/game.js">
 
 

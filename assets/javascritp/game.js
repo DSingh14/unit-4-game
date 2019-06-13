@@ -14,7 +14,7 @@ $(document).ready(function () {
     var crystal2 = Math.floor(Math.random() * 12 + 1);
     var crystal3 = Math.floor(Math.random() * 12 + 1);
     var crystal4 = Math.floor(Math.random() * 12 + 1);
-    var randomTarget = Math.floor(Math.random() * 120) + 19;
+    var randomTarget = Math.floor(Math.random() * 102) + 19;
     $("#target-count").text(randomTarget);
 
 
@@ -43,11 +43,13 @@ $(document).ready(function () {
         sumOfScore = sumOfScore + crystal1;
         $("#totalScore").text(sumOfScore);
         if (sumOfScore === randomTarget) {
+            alert("You won!");
             wins++;
             $("#wins").text(wins);
             reset();
         }
         else if (sumOfScore > randomTarget) {
+            alert("Sorry you lost!");
             losses++;
             $("#losses").text(losses);
             reset();
@@ -57,11 +59,13 @@ $(document).ready(function () {
         sumOfScore = sumOfScore + crystal2;
         $("#totalScore").text(sumOfScore);
         if (sumOfScore === randomTarget) {
+            alert("You won!");
             wins++;
             $("#wins").text(wins);
             reset();
         }
         else if (sumOfScore > randomTarget) {
+            alert("Sorry you lost!");
             losses++;
             $("#losses").text(losses);
             reset();
@@ -71,11 +75,13 @@ $(document).ready(function () {
         sumOfScore = sumOfScore + crystal3;
         $("#totalScore").text(sumOfScore);
         if (sumOfScore === randomTarget) {
+            alert("You won!");
             wins++;
             $("#wins").text(wins);
             reset();
         }
         else if (sumOfScore > randomTarget) {
+            alert("Sorry you lost!");
             losses++;
             $("#losses").text(losses);
             reset();
@@ -85,11 +91,13 @@ $(document).ready(function () {
         sumOfScore = sumOfScore + crystal4;
         $("#totalScore").text(sumOfScore);
         if (sumOfScore === randomTarget) {
+            alert("You won!");
             wins++;
             $("#wins").text(wins);
             reset();
         }
         else if (sumOfScore > randomTarget) {
+            alert("Sorry you lost!");
             losses++;
             $("#losses").text(losses);
             reset();
