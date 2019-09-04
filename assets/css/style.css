@@ -45,11 +45,19 @@ h2{
 	padding: 10px;
 
 }
-.card-img-top{
+.card-img-top1,  .card-img-top3, .card-img-top4{
 	background-color: #ecbf95cc;
 	border:solid 3px #73ddd4cc;
 	padding: 10px;
-	
+	height: 21rem;
+	width: 100%;	
+}
+.card-img-top2{
+	background-color: #ecbf95cc;
+	border:solid 3px #73ddd4cc;
+	padding: 10px;
+	height: 21rem;
+	width: 100%;	
 }
 .value-body{
 	border:solid 3px #73ddd4cc;
